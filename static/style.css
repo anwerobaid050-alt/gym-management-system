@@ -1,0 +1,34 @@
+/* Shared stylesheet for basic pages */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#ff4a4a;--card:#111;--muted:#cfcfcf;--container-width:80%}
+body{font-family:Arial, Helvetica, sans-serif;background:#0b0b0b;color:#fff;line-height:1.6}
+header{width:var(--container-width);margin:0 auto;padding:1.2rem 0;display:flex;justify-content:space-between;align-items:center}
+.brand-link{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:inherit}
+.logo{height:1.6rem;object-fit:cover}
+.brand-name, .lefthead h2{font-weight:700;font-size:1.4rem}
+nav a{color:#ece7e7;margin-left:1rem;text-decoration:none;font-weight:600}
+
+/* Hero */
+.hero{min-height:55vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1rem;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('gym.jpg') center/cover no-repeat;color:#fff}
+.hero h1, .hero h2{font-size:clamp(1.8rem,5vw,3rem);margin-bottom:.5rem;text-shadow:0 2px 6px rgba(0,0,0,.6)}
+.hero p{max-width:800px;color:#fff;font-size:clamp(1rem,2vw,1.2rem);margin-bottom:1rem}
+
+/* CTA */
+.cta, .btn{background:var(--accent);color:#fff;padding:.7rem 1.1rem;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block}
+.cta:hover, .btn:hover{opacity:.95}
+
+/* Features / cards */
+.features{width:var(--container-width);margin:2rem auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:10px;text-align:left}
+.card h3{margin-bottom:.5rem}
+.card p{color:var(--muted)}
+
+.content{width:var(--container-width);margin:1.5rem auto;max-width:1000px}
+.plans{display:flex;gap:1rem;flex-wrap:wrap}
+.plan{background:var(--card);padding:1rem;border-radius:8px;flex:1 1 220px;text-align:center}
+.price{color:var(--accent);font-weight:700;margin-top:.5rem}
+
+footer{width:var(--container-width);margin:2rem auto;color:var(--muted);font-size:.95rem;text-align:center}
+
+.center{text-align:center}
+@media (max-width:600px){header{width:90%}.hero{padding:2rem}}
