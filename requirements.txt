@@ -1,2 +1,4 @@
 Flask
 gunicorn
+Added requirements for Azure deployment
+
